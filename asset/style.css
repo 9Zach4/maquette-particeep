@@ -1,13 +1,75 @@
+/* Appliquer une police de caractères et une couleur de texte */
 body {
-  margin: auto;
-  max-width: 1080px;
-}
-
-#switch {
-	display: inline-block;
-	position: relative;
-	width: 70px;
-	height: 40px;
-	cursor: pointer;
-	overflow: hidden;
-}
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  /* Centrer le titre et ajuster sa taille */
+  h1 {
+    text-align: center;
+    font-size: 2em;
+  }
+  
+  /* Ajouter une bordure et un remplissage à la boîte du formulaire */
+  form {
+    border: 2px solid #ccc;
+    padding: 20px;
+  }
+  
+  /* Ajuster la largeur des champs de saisie de texte */
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  
+  /* Ajouter un espacement vertical entre les champs de saisie */
+  input[type="text"] + br,
+  input[type="email"] + br,
+  input[type="tel"] + br,
+  input[type="date"] + br {
+    display: block;
+    height: 10px;
+  }
+  
+  /* Ajouter une icône avant le champ de saisie de texte pour le nom et le prénom */
+  label[for="nom"]::before,
+  label[for="prenom"]::before {
+    content: "\1F464"; /* code Unicode pour une icône de personne */
+    margin-right: 5px;
+  }
+  
+  /* Ajuster l'espacement vertical des boutons radio */
+  input[type="radio"] {
+    margin-bottom: 5px;
+  }
+  
+  /* Ajouter un style aux boutons radio sélectionnés */
+  input[type="radio"]:checked + label::before {
+    content: "\2714"; /* code Unicode pour une coche */
+    margin-right: 5px;
+  }
+  
+  /* Ajouter un style à la case à cocher de notification */
+  #switch {
+    transform: scale(1.5); /* agrandir la case à cocher */
+    margin-right: 5px;
+  }
+  
+  /* Ajouter un style au bouton de soumission */
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
