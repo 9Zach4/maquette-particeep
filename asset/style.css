@@ -1,1 +1,13 @@
-body {}
+body {
+  margin: auto;
+  max-width: 1080px;
+}
+
+#switch {
+	display: inline-block;
+	position: relative;
+	width: 70px;
+	height: 40px;
+	cursor: pointer;
+	overflow: hidden;
+}
