@@ -14,15 +14,17 @@ body {
   form {
     border: 2px solid #ccc;
     padding: 20px;
+    max-width: 1080px;
+    margin: auto;
+    height: 800px;
   }
   
   /* Ajuster la largeur des champs de saisie de texte */
   input[type="text"],
   input[type="email"],
-  input[type="tel"],
   input[type="date"] {
     width: 100%;
-    padding: 8px;
+    padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
@@ -32,36 +34,68 @@ body {
   /* Ajouter un espacement vertical entre les champs de saisie */
   input[type="text"] + br,
   input[type="email"] + br,
-  input[type="tel"] + br,
+
   input[type="date"] + br {
     display: block;
     height: 10px;
   }
   
-  /* Ajouter une icône avant le champ de saisie de texte pour le nom et le prénom */
-  label[for="nom"]::before,
-  label[for="prenom"]::before {
-    content: "\1F464"; /* code Unicode pour une icône de personne */
-    margin-right: 5px;
+  label {
+    display: inline-block;
+  
+    vertical-align: middle;
   }
   
+  .form2 {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  
+  }
+  
+  select {
+    padding: 10px;
+    border: none;
+    
+    font-size: 16px;
+    border-radius: 5px 0 0 5px;
+    
+    margin-right: -1px; 
+
+  }
+  
+  
+  input[type="tel"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    width: 100%;
+
+  }
+  
+   img{
+    width: 21px;
+    height: 15px;
+    /* margin-right: 10px; */
+    padding: 10px;
+    padding-top: 12px;
+}
+
   /* Ajuster l'espacement vertical des boutons radio */
   input[type="radio"] {
     margin-bottom: 5px;
   }
-  
-  /* Ajouter un style aux boutons radio sélectionnés */
-  input[type="radio"]:checked + label::before {
-    content: "\2714"; /* code Unicode pour une coche */
-    margin-right: 5px;
-  }
-  
+
   /* Ajouter un style à la case à cocher de notification */
   #switch {
     transform: scale(1.5); /* agrandir la case à cocher */
     margin-right: 5px;
   }
-  
+  #switch::after {
+    content: "Notification";
+    font-size: 15px;
+    vertical-align: middle;
+  }
   /* Ajouter un style au bouton de soumission */
   input[type="submit"] {
     background-color: #4CAF50;
