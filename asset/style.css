@@ -12,9 +12,9 @@ body {
   
   /* Ajouter une bordure et un remplissage à la boîte du formulaire */
   form {
-    border: 2px solid #ccc;
+    border: 1px solid #ccc;
     padding: 20px;
-    max-width: 1080px;
+    max-width: 840px;
     margin: auto;
     height: 800px;
   }
@@ -86,16 +86,54 @@ body {
     margin-bottom: 5px;
   }
 
-  /* Ajouter un style à la case à cocher de notification */
-  #switch {
-    transform: scale(1.5); /* agrandir la case à cocher */
-    margin-right: 5px;
-  }
-  #switch::after {
-    content: "Notification";
-    font-size: 15px;
-    vertical-align: middle;
-  }
+.switch {
+
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 49px;
+  height: 18px;
+}
+
+ .switch input{
+  display: none;
+ }
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 30px;
+
+}
+.slider:before {
+  position: absolute;
+    content: "";
+    height: 22px;
+    width: 23px;
+    left: 0px;
+    bottom: -2px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+    box-shadow: 0px 0px 2px black;
+}
+input:checked + .slider {
+  background-color: #03a10b;
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px #8c0cb3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
   /* Ajouter un style au bouton de soumission */
   input[type="submit"] {
     background-color: #4CAF50;
@@ -107,3 +145,22 @@ body {
     float: right;
   }
   
+.notif {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 17px;
+}
+
+#drag-drop-box {
+  border: 2px dashed #ccc;
+  padding: 20px;
+  text-align: center;
+}
+
+#drag-drop-box p {
+  margin: 0;
+  font-size: 16px;
+  color: #aaa;
+}
