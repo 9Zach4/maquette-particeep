@@ -16,7 +16,6 @@ body {
     padding: 20px;
     max-width: 840px;
     margin: auto;
-    height: 800px;
   }
   
   /* Ajuster la largeur des champs de saisie de texte */
@@ -127,22 +126,25 @@ body {
 input:checked + .slider {
   background-color: #03a10b;
 }
-input:focus + .slider {
-  box-shadow: 0 0 1px #8c0cb3;
-}
+
 
 input:checked + .slider:before {
   transform: translateX(26px);
 }
   /* Ajouter un style au bouton de soumission */
   input[type="submit"] {
-    background-color: #4CAF50;
+    background-color: #ccc;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    float: right;
+    position: relative;
+    left: 90%;
+    margin-top: 10px;
+  }
+  input[type="submit"]:hover {
+    background-color: #03a10b;
   }
   
 .notif {
@@ -154,13 +156,43 @@ input:checked + .slider:before {
 }
 
 #drag-drop-box {
+  display: flex;
   border: 2px dashed #ccc;
   padding: 20px;
   text-align: center;
+  height: 80px;
+ 
+  flex-direction: column;
+  justify-content: flex-end;
 }
+
 
 #drag-drop-box p {
   margin: 0;
   font-size: 16px;
   color: #aaa;
 }
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: 500;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  color: #aaa;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+hr {
+  width: 880px;
+  box-sizing: border-box;
+  color: black;
+  margin-left: -20PX;
+}
+
