@@ -3,7 +3,9 @@ body {
     font-family: Arial, sans-serif;
     color: #333;
   }
-  
+  html{
+    scroll-behavior: smooth;
+  }
   /* Centrer le titre et ajuster sa taille */
   h1 {
     text-align: center;
