@@ -9,28 +9,31 @@
   </head>
   <body>
     
-    <form id="information" method="post">
-      <div class=" container">
-      <h1>Vos Information</h1>
-    </div>
-
-      <label for="nom">Nom :</label>
-      <br><br>
-      <input type="text" id="nom" name="nom"><br><br>
-
-      <label for="prenom">Prénom :</label>
-      <br><br>
-      <input type="text" id="prenom" name="prenom"><br><br>
-
-      <label for="adresse">Adresse :</label>
-      <br><br>
-      <input type="text" id="adresse" name="adresse"><br><br>
+    <form id="information">
    
-      <label for="date_de_naissance">Date de naissance :</label>
+      <div class="progress-bar"></div>
+      <div class="progress-bar2"></div>
+      <div class=" container">    
+        <h1>Vos Information</h1>
+      </div>
+
+      <label for="nom">Nom*</label>
       <br><br>
-      <input type="date" id="date_de_naissance" name="date_de_naissance"><br><br>
+      <input type="text" id="nom" name="nom" placeholder="Donnez votre réponse ici"><br><br>
+
+      <label for="prenom">Prénom*</label>
+      <br><br>
+      <input type="text" id="prenom" name="prenom" placeholder="Donnez votre réponse ici" ><br><br>
+
+      <label for="adresse">Adresse complète*</label>
+      <br><br>
+      <input type="text" id="adresse" name="adresse" placeholder="Donnez votre réponse ici"><br><br>
+   
+      <label for="date_de_naissance">Date de naissance*</label>
+      <br><br>
+      <input type="date" id="date_de_naissance" name="date_de_naissance" value="__/__/_____"><br><br>
     
-      <label for="telephone">Numéro de téléphone :</label> <br><br> 
+      <label for="telephone">Numéro de téléphone*</label> <br><br> 
     <div class=" form2"> 
       <img src="./asset/icon/frenchflag.png" alt ="">
       <select id="code-pays" name="code-pays">
@@ -39,11 +42,16 @@
       <input type="tel" id="telephone" name="telephone">
     </div>
     <br><br>
-      <label for="questionnaire">Avez vous des questions ?</label><br>
+      <label for="questionnaire">Question à choix multiples*</label><br><br>
       <input type="radio" id="oui" name="questionnaire" value="oui">
-      <label for="oui">Oui</label><br>
+      <label for="oui">
+        <p>Oui</p>
+      </label> <br>
       <input type="radio" id="non" name="questionnaire" value="non">
-      <label for="non">Non</label><br><br>
+      <label for="non">
+        <p>Non</p>
+      </label>
+        <br><br>
 
       <label for="email">Adresse e-mail :</label><br><br>
       <input type="email" id="email" name="email"><br><br>
@@ -61,7 +69,7 @@
         <span class="material-symbols-outlined">
           cloud_upload
           </span>
-        <p>Déposez un fichier ici</p>
+        <p>Glissez votre fichier dans cette zone</p>
       </div>
       <br><br>
   <hr>
@@ -70,4 +78,3 @@
     </form>
   </body>
 </html>
-
