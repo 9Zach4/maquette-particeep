@@ -9,61 +9,74 @@
   </head>
   <body>
     
-    <form id="information">
-   
-      <div class="progress-bar"></div>
-      <div class="progress-bar2"></div>
-      <div class=" container">    
-        <h1>Vos Information</h1>
-      </div>
+ <!-- Début du formulaire -->
+<form id="information">
 
-      <label for="nom">Nom*</label>
-      <br><br>
-      <input type="text" id="nom" name="nom" placeholder="Donnez votre réponse ici"><br><br>
+  <!-- Barre de progression -->
+  <div class="progress-bar"></div>
+  <div class="progress-bar2"></div>
 
-      <label for="prenom">Prénom*</label>
-      <br><br>
-      <input type="text" id="prenom" name="prenom" placeholder="Donnez votre réponse ici" ><br><br>
-
-      <label for="adresse">Adresse complète*</label>
-      <br><br>
-      <input type="text" id="adresse" name="adresse" placeholder="Donnez votre réponse ici"><br><br>
-   
-      <label for="date_de_naissance">Date de naissance*</label>
-      <br><br>
-      <input type="date" id="date_de_naissance" name="date_de_naissance" value="__/__/_____"><br><br>
-    
-      <label for="telephone">Numéro de téléphone*</label> <br><br> 
-    <div class=" form2"> 
-      <img src="./asset/icon/frenchflag.png" alt ="">
-      <select id="code-pays" name="code-pays">
-        <option value="+33">+33</option>
-      </select>
-      <input type="tel" id="telephone" name="telephone">
-    </div>
-    <br><br>
-      <label for="questionnaire">Question à choix multiples*</label><br><br>
-      <input type="radio" id="oui" name="questionnaire" value="oui">
-      <label for="oui">
-        <p>Oui</p>
-      </label> <br>
-      <input type="radio" id="non" name="questionnaire" value="non">
-      <label for="non">
-        <p>Non</p>
-      </label>
-        <br><br>
-
-      <label for="email">Adresse e-mail :</label><br><br>
-      <input type="email" id="email" name="email"><br><br>
-     
-    <div class ="notif">
-      <p>Voulez vous recevoir des notifications mail ?</p>
-      <label class = "switch"> 
-        <input type="checkbox"> 
-        <span class ="slider"></span>
-      </label>
+  <!-- Titre du formulaire -->
+  <div class=" container">    
+    <h1>Vos Informations</h1>
   </div>
-      <br><br>
+
+  <!-- Champ pour le nom -->
+  <label for="nom">Nom*</label>
+  <br><br>
+  <input type="text" id="nom" name="nom" placeholder="Donnez votre réponse ici"><br><br>
+
+  <!-- Champ pour le prénom -->
+  <label for="prenom">Prénom*</label>
+  <br><br>
+  <input type="text" id="prenom" name="prenom" placeholder="Donnez votre réponse ici" ><br><br>
+
+  <!-- Champ pour l'adresse -->
+  <label for="adresse">Adresse complète*</label>
+  <br><br>
+  <input type="text" id="adresse" name="adresse" placeholder="Donnez votre réponse ici"><br><br>
+
+  <!-- Champ pour la date de naissance -->
+  <label for="date_de_naissance">Date de naissance*</label>
+  <br><br>
+  <input type="date" id="date_de_naissance" name="date_de_naissance" value="__/__/_____"><br><br>
+
+  <!-- Champ pour le numéro de téléphone -->
+  <label for="telephone">Numéro de téléphone*</label> <br><br> 
+  <div class=" form2"> 
+    <img src="./asset/icon/frenchflag.png" alt ="">
+    <select id="code-pays" name="code-pays">
+      <option value="+33">+33</option>
+    </select>
+    <input type="tel" id="telephone" name="telephone">
+  </div>
+  <br><br>
+
+  <!-- Question à choix multiples -->
+  <label for="questionnaire">Question à choix multiples*</label><br><br>
+  <input type="radio" id="oui" name="questionnaire" value="oui">
+  <label for="oui">
+    <p>Oui</p>
+  </label> <br>
+  <input type="radio" id="non" name="questionnaire" value="non">
+  <label for="non">
+    <p>Non</p>
+  </label>
+  <br><br>
+
+  <!-- Champ pour l'adresse e-mail -->
+  <label for="email">Adresse e-mail :</label><br><br>
+  <input type="email" id="email" name="email"><br><br>
+ 
+  <!-- Option pour recevoir des notifications par e-mail -->
+  <div class ="notif">
+    <p>Voulez vous recevoir des notifications mail ?</p>
+    <label class = "switch"> 
+      <input type="checkbox"> 
+      <span class ="slider"></span>
+    </label>
+  </div>
+  <br><br>
     <p>Pièce d'identité</p>
       <div id="drag-drop-box">
         <span class="material-symbols-outlined">
@@ -74,7 +87,6 @@
       <br><br>
   <hr>
       <input type="submit" value="Suivant">
-    
     </form>
   </body>
 </html>

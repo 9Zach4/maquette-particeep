@@ -1,6 +1,6 @@
 /* Appliquer une police de caractères et une couleur de texte */
 body {
-  font-family: Arial, sans-serif;
+   font-family: Arial, sans-serif;
   color: #333;
 }
 
@@ -17,7 +17,7 @@ form {
   max-width: 840px;
   margin: auto;
   box-shadow: 0 0.3em 1em #000;
-   border-radius: 4px;
+  border-radius: 4px;
 }
 
 /* Ajuster la largeur des champs de saisie de texte */
@@ -57,10 +57,8 @@ label {
 select {
   padding: 10px;
   border: none;
-  
   font-size: 16px;
   border-radius: 5px 0 0 5px;
-  
   margin-right: -1px; 
 
 }
@@ -77,7 +75,7 @@ input[type="tel"] {
  img{
   width: 21px;
   height: 15px;
-  /* margin-right: 10px; */
+ 
   padding: 10px;
   padding-top: 12px;
 }
@@ -86,6 +84,8 @@ input[type="tel"] {
 input[type="radio"] {
   margin-bottom: 5px;
 }
+
+/*toggle switch*/
 
 .switch {
 
@@ -158,15 +158,19 @@ flex-direction: row;
 gap: 17px;
 }
 
-#drag-drop-box {
-display: flex;
-border: 2px dashed #ccc;
-padding: 20px;
-text-align: center;
-height: 80px;
 
-flex-direction: column;
-justify-content: flex-end;
+/* drag and drop box */
+#drag-drop-box {
+  display: flex;
+  border: 2px dashed #ccc;
+  padding: 20px;
+  text-align: center;
+  height: 80px;
+  margin: auto;
+  width: 85%;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 5px;
 }
 
 
@@ -175,6 +179,7 @@ margin: 0;
 font-size: 16px;
 color: #aaa;
 }
+/*icone nuage upload*/
 
 .material-symbols-outlined {
 font-family: 'Material Symbols Outlined';
@@ -192,6 +197,7 @@ color: #aaa;
 -webkit-font-feature-settings: 'liga';
 -webkit-font-smoothing: antialiased;
 }
+/*ligne séparatrice*/
 hr {
 width: 880px;
 box-sizing: border-box;
@@ -205,6 +211,8 @@ label p {
   margin: 7px;
   margin-bottom: 10px;
 }
+/*ligne de progression*/
+
 .progress-bar {
   height: 10px;
   background-color: #ff392f;
