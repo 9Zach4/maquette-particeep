@@ -56,14 +56,12 @@ label {
   height: 42px;
 }
 .box .form2 p {
-  margin: 0;
-  margin-top: 2px;
   margin-right: 16px;
 }
 
-.material-symbols-outlined {
+.form2 .material-symbols-outlined {
   font-family: 'Material Symbols Outlined';
-  font-weight: normal;
+  font-weight: 200;
   font-style: normal;
   font-size: 24px;
   line-height: 1;
@@ -93,6 +91,7 @@ img{
   width: 21px;
   height: 13px;
   padding: 10px;
+  margin-left: 2px;
   padding-top: 12px;
 }
 
@@ -204,11 +203,11 @@ hr{
   margin: 0;
   font-size: 16px;
   color: #aaa;
-  font-weight: 600;
+  font-weight: 500;
 }
 /*icone nuage upload*/
 
-.material-symbols-outlined {
+  #drag-drop-box .material-symbols-outlined {
   font-style: normal;
   font-size: 24px;
   line-height: 1;
@@ -335,13 +334,9 @@ label p {
   }
   
   /* Ajuster la position du bouton de soumission */
-  input[type="submit"] {
-    
-  }
   
   /* Ajuster la largeur et la hauteur de la zone de glisser-déposer */
   #drag-drop-box {
-
     height: 120px;
   }
   
