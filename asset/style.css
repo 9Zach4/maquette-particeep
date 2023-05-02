@@ -1,6 +1,7 @@
 /* Appliquer une police de caractères et une couleur de texte */
 body {
   color: #333;
+  margin: 10px;
 }
 *{
   font-family: 'Work Sans', sans-serif;
@@ -12,10 +13,8 @@ h1 {
 }
 
 /* Ajouter une bordure et un remplissage à la boîte du formulaire */
-form {
-  
+form { 
   padding: 20px;
-  padding-top: 0px ;
   max-width: 840px;
   margin: auto;
   box-shadow: 0 0.3em 1em #000;
@@ -37,7 +36,6 @@ input[type="date"] {
 /* Ajouter un espacement vertical entre les champs de saisie */
 input[type="text"] + br,
 input[type="email"] + br,
-
 input[type="date"] + br {
   display: block;
   height: 10px;
@@ -55,6 +53,7 @@ label {
   border-radius: 4px 0px 0px 4px;
   flex-direction: row;
   align-items: center;
+  height: 42px;
 }
 .box .form2 p {
   margin: 0;
@@ -84,10 +83,9 @@ label {
 
 input[type="tel"] {
   padding: 10px;
-  font-size: 16px;
   border: 1px solid #ccc;
   width: 100%;
-  height: 20px;
+  height: 22px;
   border-radius: 0px 3px 3px 0px;
 }
 
@@ -175,11 +173,11 @@ input[type="submit"]:hover {
 }
 
 .notif {
-display: flex;
-justify-content: flex-start;
-align-items: center;
-flex-direction: row;
-gap: 17px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 17px;
 }
 
   
@@ -200,25 +198,25 @@ gap: 17px;
 
 
 #drag-drop-box p {
-margin: 0;
-font-size: 16px;
-color: #aaa;
-font-weight: 600;
+  margin: 0;
+  font-size: 16px;
+  color: #aaa;
+  font-weight: 600;
 }
 /*icone nuage upload*/
 
 .material-symbols-outlined {
- font-style: normal;
- font-size: 24px;
- line-height: 1;
- letter-spacing: normal;
- text-transform: none;
- display: inline-block;
- word-wrap: normal;
- direction: ltr;
- color: #aaa;
- -webkit-font-feature-settings: 'liga';
- -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  word-wrap: normal;
+  direction: ltr;
+  color: #aaa;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
 }
 
 /*ligne séparatrice*/
@@ -250,7 +248,7 @@ label p {
 .progress-bar2 {
   height: 10px;
   background-color: #f17670;
-  width: 880px;
+  width: 100%;
   margin: auto;
   border-radius: 0px 4px 0px 0px;
 }
@@ -276,6 +274,7 @@ label p {
 .container {
   display: flex;
   flex-direction: column;
+  margin: -20px;
   align-items: center;
 }
 
@@ -287,6 +286,98 @@ label p {
  
 .progress-box {
   display: flex;
-  display: flex;
+  width: 100%;
   margin-bottom: 20px;
 }
+
+
+
+
+@media screen and (max-width: 768px) {
+  body{
+    margin: 0;
+  }
+  /* Ajuster la taille du titre sur les petits écrans */
+  h1 {
+    font-size: 1.5em;
+  }
+  
+  /* Ajuster la largeur des champs de saisie de texte */
+  input[type="text"],
+  input[type="email"],
+  input[type="date"] {
+    width: 100%;
+  }
+  
+  /* Ajuster la largeur de la boîte du formulaire */
+  form {
+    width: auto;
+  }
+  
+  hr {
+    display: none;
+  }
+
+  .number p {
+   padding : 3px;
+  }
+  /* Ajuster l'espacement autour de l'image */
+  img {
+    padding-left: 13px;
+    padding-right: 5px;
+  }
+  
+  /* Ajuster la position du bouton de soumission */
+  input[type="submit"] {
+    left: 80%;
+  }
+  
+  /* Ajuster la largeur et la hauteur de la zone de glisser-déposer */
+  #drag-drop-box {
+
+    height: 120px;
+  }
+  
+  /* Adapter la taille des icônes de matériel décrivant */
+  .material-symbols-outlined {
+    font-size: 18px;
+  }
+  
+  /* Ajuster la taille des paragraphes */
+  label p {
+    font-size: 12px;
+  }
+
+
+  
+  /* Ajuster la taille du numéro */
+  .number {
+    font-size: 12px;
+  }
+  
+  /* Ajuster la largeur de la boîte .box */
+  .box {
+    width: 100%;
+  }
+  
+ /* Ajuster la barre de progression */
+ .progress-box{
+    width: 100%;
+    box-sizing: border-box;
+ }
+ .progress-bar{
+    box-sizing: border-box;
+    border-radius: 0px;
+ }
+
+  .progress-bar2{
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 0px; 
+  }
+}
+  
+  
+  
+  
+  
