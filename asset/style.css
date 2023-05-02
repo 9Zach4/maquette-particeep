@@ -160,8 +160,6 @@ input[type="submit"] {
   font-size: 15px;
   border-radius: 4px;
   cursor: pointer;
-  position: relative;
-  left: 90%;
   margin-top: 2px;
   margin-bottom: -10px;
   font-weight: 600;
@@ -219,13 +217,16 @@ input[type="submit"]:hover {
   -webkit-font-smoothing: antialiased;
 }
 
-/*ligne séparatrice*/
-hr {
-  width: 880px;
+/*conteneur bouton */
+.buttonContainer{
+  display: flex;
   box-sizing: border-box;
-  border: 1px solid #f2f2f2;
-  margin-left: -20px;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 3px;
+  margin: 5px;
 }
+
  
 label p {
   font-size: 14px;
@@ -329,7 +330,7 @@ label p {
   
   /* Ajuster la position du bouton de soumission */
   input[type="submit"] {
-    left: 80%;
+    
   }
   
   /* Ajuster la largeur et la hauteur de la zone de glisser-déposer */
