@@ -320,9 +320,6 @@ label p {
     width: auto;
   }
   
-  hr {
-    display: none;
-  }
 
   .number p {
    padding : 3px;
